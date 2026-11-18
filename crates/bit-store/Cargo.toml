@@ -1,0 +1,12 @@
+[package]
+name = "bit-store"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Crash-safe on-disk content-addressed BlobStore, ACID MetadataStore, external directory ingestion, and transactional Apply engine for Bit."
+
+[dependencies]
+bit-core = { workspace = true }
+
+[lints]
+workspace = true

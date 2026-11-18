@@ -1,0 +1,12 @@
+[package]
+name = "bit-ipc"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Deterministic wire framing and local IPC transport for Bit control-plane communication."
+
+[dependencies]
+bit-core = { workspace = true }
+
+[lints]
+workspace = true

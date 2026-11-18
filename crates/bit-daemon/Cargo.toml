@@ -1,0 +1,17 @@
+[package]
+name = "bit-daemon"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Background VFS mount host and control-plane IPC server for Bit."
+
+[dependencies]
+bit-core = { workspace = true }
+bit-store = { workspace = true }
+bit-vfs-fuse = { workspace = true }
+bit-vfs-nfs = { workspace = true }
+bit-vfs-winfsp = { workspace = true }
+bit-ipc = { workspace = true }
+
+[lints]
+workspace = true

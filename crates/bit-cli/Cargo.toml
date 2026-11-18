@@ -1,0 +1,21 @@
+[package]
+name = "bit-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Command-line interface and on-demand daemon client for Bit."
+
+[[bin]]
+name = "bit"
+path = "src/main.rs"
+
+[dependencies]
+bit-core = { workspace = true }
+bit-ipc = { workspace = true }
+bit-daemon = { workspace = true }
+
+[dev-dependencies]
+bit-store = { workspace = true }
+
+[lints]
+workspace = true

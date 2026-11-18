@@ -1,0 +1,9 @@
+[package]
+name = "bit-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "OS-independent, Git-agnostic deterministic core domain model, port traits, and in-memory engine for Bit."
+
+[lints]
+workspace = true

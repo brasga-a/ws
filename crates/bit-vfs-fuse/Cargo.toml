@@ -1,0 +1,12 @@
+[package]
+name = "bit-vfs-fuse"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Linux FUSE single-mount VFS adapter for Bit Views"
+
+[dependencies]
+bit-core = { workspace = true }
+
+[lints]
+workspace = true

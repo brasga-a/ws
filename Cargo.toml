@@ -1,0 +1,24 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+bit-core = { path = "crates/bit-core" }
+bit-store = { path = "crates/bit-store" }
+bit-vfs-fuse = { path = "crates/bit-vfs-fuse" }
+bit-vfs-nfs = { path = "crates/bit-vfs-nfs" }
+bit-vfs-winfsp = { path = "crates/bit-vfs-winfsp" }
+bit-ipc = { path = "crates/bit-ipc" }
+bit-daemon = { path = "crates/bit-daemon" }
+bit-cli = { path = "crates/bit-cli" }
+
+[workspace.lints.rust]
+unsafe_code = "deny"
+
+[workspace.lints.clippy]
+all = "warn"

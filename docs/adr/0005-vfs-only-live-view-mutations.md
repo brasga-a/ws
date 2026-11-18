@@ -1,0 +1,3 @@
+# VFS-only file mutations on live Views
+
+Once a `View` is created, individual files and directories inside it are mutated exclusively through filesystem syscalls on its VFS mount; the CLI exposes lifecycle and whole-`View` operations (`create`, `diff`, `freeze`, `apply`, `rm`) rather than per-file restore or checkout commands. Mutating an `Overlay` out-of-band while the OS kernel holds cached entries and pages risks split-brain state—especially on macOS loopback NFSv3, where the server cannot push cache invalidations to the kernel client—whereas discarding unwanted state is already `O(1)` by creating a fresh `View` from its `Base`.
